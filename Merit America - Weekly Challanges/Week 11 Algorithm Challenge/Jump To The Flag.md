@@ -164,8 +164,7 @@ class Result {
      */
 
     public static int jumps(int flagHeight, int bigJump) {
-        int totalJumps = (flagHeight / bigJump) + (flagHeight % bigJump);
-            return totalJumps;
+        return (flagHeight / bigJump) + (flagHeight % bigJump);
     }
 
 }
