@@ -161,7 +161,6 @@ class Result {
 
     public static long doubleSize(List<Long> arr, long b) {
     // Write your code here
-
     }
 
 }
