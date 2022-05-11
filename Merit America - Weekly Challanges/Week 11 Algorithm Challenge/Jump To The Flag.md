@@ -113,7 +113,7 @@ class Result {
      */
 
     public static int jumps(int flagHeight, int bigJump) {
-
+	// Write your code here
     }
 
 }
@@ -166,8 +166,9 @@ class Result {
     public static int jumps(int flagHeight, int bigJump) {
         return (flagHeight / bigJump) + (flagHeight % bigJump);
     }
-
+    
 }
+
 public class Solution {
     public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
