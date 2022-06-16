@@ -58,7 +58,7 @@ Pick **ONE** option
 ---
 
 ### 5. Java : OOPS
-What feature allows different metods to have the same name and arguments type, but a different implementation is called?
+What feature allows different methods to have the same name and arguments type, but a different implementation is called?
 
 Pick **ONE** option
 
@@ -874,7 +874,6 @@ Insert _1_ left parenthesis at the left end of the string to get '((()))'. The 
 
 **Constraints**
 -   1 ≤ length of _s_ ≤ 105
-    
 
 ##### Input Format For Custom Testing
 The first line contains a string, _s_, the initial parentheses sequence.
