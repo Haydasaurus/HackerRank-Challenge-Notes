@@ -1,9 +1,8 @@
-# 1. Fun with Anagrams
+# Fun with Anagrams
 
 Two strings are anagrams if they are permutations of each other. In other words, both strings have the same size and the same characters. For example, "aaagmnrs" is an anagram of "anagrams". Given an array of strings, remove each string that is an anagram of an earlier string, then return the remaining array in sorted order.
 
-**Example**
-
+**Example:**
 _str = ['code', 'doce', 'ecod', 'framer', 'frame']_
 
 -   "_code"_ and "_doce"_ are anagrams. Remove "doce" from the array and keep the first occurrence _"code"_ in the array.
@@ -14,34 +13,28 @@ _str = ['code', 'doce', 'ecod', 'framer', 'frame']_
 
  
 
-Function Description
-
+**Function Description:**
 Complete the function _funWithAnagrams_ in the editor below.
 
 _funWithAnagrams_ has the following parameters:
-
     _string text[n]:_  an array of strings
 
-Returns:
-
+**Returns:**
     _string[m]:_  an array of the remaining strings in ascending alphabetical order,.
 
-Constraints
-
+**Constraints:**
 -    _0 ≤ n ≤ 1000_
 -   _0 ≤ m ≤ n_
 -   _1 ≤_ length of _text[i] ≤ 1000_
 -   Each string _text[i]_ is made up of characters in the range ascii[a-z].
 
-Input Format For Custom Testing
-
+## Input Format For Custom Testing
 The first line contains an integer, _n_, that denotes the number of elements in _text_.  
 Each line _i_ of the _n_ subsequent lines (where _0 ≤ i < n_) contains a string that describes _text[i]_.
 
-Sample Case 0
-
-Sample Input For Custom Testing
-
+## Sample Case 0
+**Sample Input 0:**
+```
 STDIN       Function 
 -----       -------- 
 4        →  n = 4
@@ -49,22 +42,22 @@ code     →  text = ["code","aaagmnrs","anagrams","doce"]
 aaagmnrs
 anagrams
 doce
+```
 
-Sample Output
-
+**Sample Output 0:**
+```
 aaagmnrs
 code
+```
 
-Explanation
-
+**Explanation:**
 -   "_code"_ and "_doce"_ are anagrams. Remove "_doce_" and keep the first occurrence _"code"_ in the array.
 -   _"aaagmnrs"_ and "_anagrams"_ are anagrams. Remove "a_nagrams_" and keep the first occurrence _"aaagmnrs"_ in the array.
 -   Order the remaining strings in ascending order:  _["aaagmnrs", "code"]._
 
-Sample Case 1
-
-Sample Input For Custom Testing
-
+## Sample Case 1
+**Sample Input 1:**
+```
 STDIN     Function
 -----     --------
 4      →  n = 4
@@ -72,13 +65,14 @@ poke   →  text = ["poke","pkoe","okpe","ekop"]
 pkoe
 okpe
 ekop
+```
 
-Sample Output
-
+**Sample Output 1:**
+```
 poke
+```
 
-Explanation
-
+**Explanation:**
 -   _"poke_" and _"pkoe"_ are anagrams. Remove _"pkoe"_ and keep the first occurrence _"poke"_  in the array.
 -   _"poke"_ and _"okpe"_ are anagrams. Remove _"okpe"_ and keep the first occurrence _"poke"_ in the array.
 -   _"poke"_  and _"ekop"_ are anagrams. Remove _"ekop"_ and keep the first occurrence _"poke"_ in the array.
@@ -86,6 +80,7 @@ Explanation
 
 ---
 
+**Starter Code:**
 ```java
 import java.io.*;
 import java.math.*;
@@ -111,7 +106,7 @@ class Result {
      */
 
     public static List<String> funWithAnagrams(List<String> text) {
-
+	//Write your code here
     }
 
 }
@@ -144,9 +139,9 @@ public class Solution {
         bufferedWriter.close();
     }
 }
-
 ```
 
+**Finished Code:**
 ```java
 import java.io.*;
 import java.math.*;
@@ -218,5 +213,4 @@ public class Solution {
         bufferedWriter.close();
     }
 }
-
 ```

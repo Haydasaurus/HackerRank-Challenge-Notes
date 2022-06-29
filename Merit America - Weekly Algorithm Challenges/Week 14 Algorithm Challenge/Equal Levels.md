@@ -1,15 +1,14 @@
-# 1. Equal Levels
----
+# Equal Levels
+
 Two signals are being generated as part of a simulation. A program monitors the signals. Whenever the two signals become equal at the same time, the frequency is noted. A record is maintained for the maximum simultaneous frequency seen so far. Each time a higher simultaneous frequency is noted, this variable (_maxequal)_ is updated to the higher frequency.
 
 Note:
-
 -   Both signals start at time _t=0,_ but their durations might be different. In this case, the comparison of equality is performed only until the end of the shorter signal.
 -   If both signals have equal frequencies at a given time but the frequency is less than or equal to the current maximum frequency, _maxequal,_ is not updated.
 
 The running times of both signals are given, denoted by _n_ and _m_ respectively. During the course of the simulation, how many times is the _maxequal_ variable updated?
 
-**Example**
+**Example:**
 _signalOne = [1, 2, 3, 3, 3, 5, 4]_
 _signalTwo = [1, 2, 3, 4, 3, 5, 4]_ 
 
@@ -27,24 +26,23 @@ At the final time, signals are equal to _4_. Since _4_ is less than _maxequal_, 
 
 _maxEqual_ was updated a total of _4_ times.
 
-**Function Description**
-
+**Function Description:**
 Complete the _updateTimes_ function in the editor below.
 
 _updateTimes_ has the following parameter(s):
     _int signalOne[n]:_ the frequencies of the first signal
     _int signalTwo[m]:_ the frequencies of the second signal
 
-**Return**
+**Returns:**
     _int:_  the number of updates
 
-**Constraints**
+**Constraints:**
 -   _1 ≤ n ≤ 105_ 
 -   _0 ≤ signalOne[i] ≤ 109_
 -   _1 ≤ m ≤ 105_
 -   _0 ≤ signalTwo[i] ≤ 109_
 
-##### Input Format For Custom Testing
+## Input Format For Custom Testing
 The first line contains an integer, _n,_ the running time of the first signal and the number of elements in _signalOne_.
 
 Each line _i_ of the _n_ subsequent lines (where _0 ≤ i < n_) contains the frequency of the _signalOne[i]._
@@ -53,8 +51,8 @@ The next line contains an integer, _m,_ the running time of the second signal an
 
 Each line _i_ of the _m_ subsequent lines (where 0 ≤ i < m) contains the frequency of the _signalTwo[i]._
 
-##### Sample Case 0
-**Sample Input For Custom Testing**
+## Sample Case 0
+**Sample Input 0:**
 ```
 STDIN     Function
 -----     --------
@@ -72,12 +70,12 @@ STDIN     Function
 1
 ```
 
-**Sample Output**
+**Sample Output 0:**
 ```
 2
 ```
 
-**Explanation**
+**Explanation:**
 ![](https://hrcdn.net/s3_pub/istreet-assets/4GXURla60sdIg3_CN6rQeA/equal_levels_sample_0.svg)
 
 The frequencies are equal during three periods, with frequencies _3, 4_ and _1._
@@ -86,9 +84,8 @@ The maximum frequency is updated twice at _3_, and _4_, since _4_ is greater tha
 
 It is not updated when their values are _1_ because _1_ is less than the current _maxequal = 4._
 
-##### Sample Case 1
-**Sample Input For Custom Testing**
-
+## Sample Case 1
+**Sample Input 1:**
 ```
 STDIN     Function
 -----     --------
@@ -106,18 +103,19 @@ STDIN     Function
 1
 ```
 
-**Sample Output**
+**Sample Output 1:**
 ```
 1
 ```
 
-**Explanation**
+**Explanation:**
 ![](https://hrcdn.net/s3_pub/istreet-assets/Lslqu42DPtfALm0Ukk77GA/equal_levels_sample_1.svg)
 
 The maximum frequency is updated once at _3,_ the only point where the signals match.
 
 ---
 
+**Starter Code:**
 ```java
 import java.io.*;
 import java.math.*;
@@ -145,7 +143,7 @@ class Result {
      */
 
     public static int updateTimes(List<Integer> signalOne, List<Integer> signalTwo) {
-
+	// Write your code here
     }
 
 }
@@ -190,4 +188,9 @@ public class Solution {
         bufferedWriter.close();
     }
 }
+```
+
+**Finished Code:**
+```java
+
 ```

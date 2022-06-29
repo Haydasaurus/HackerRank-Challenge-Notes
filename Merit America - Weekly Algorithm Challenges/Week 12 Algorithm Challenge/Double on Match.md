@@ -1,14 +1,14 @@
-# 1. Double on Match
----
+# Double on Match
+
 Given an array of long integers '_arr'_ and a number '_num',_ iterate through the elements in _arr_ and double the value of _num_ whenever an element equals _num_. Find the maximum possible value of _num_, knowing that _arr_ can be reordered before the iteration.
 
-**Example**
+**Example:**
 _arr = [1, 2, 4, 11, 12, 8]_
 _num = 2_
 
 Iterating through _arr_:
 
-| arr | num |
+| **arr** | **num** |
 | --- | --- |
 |     | 2   |
 | 1   | 2   |
@@ -20,7 +20,7 @@ Iterating through _arr_:
 
 The maximal value of _num = 16._ Note that _arr_ could have been reordered before iterating.
 
-**Function Description**
+**Function Description:**
 Complete the function _doubleSize_ in the editor below.
 
 doubleSize has the following parameter(s):
@@ -30,20 +30,20 @@ doubleSize has the following parameter(s):
 **Returns:**
    _long_ _int:_ the maximal value of _num_
 
-**Constraints**
+**Constraints:**
 -   _1 ≤ n ≤ 106_
 -   _0 ≤ arr[i] ≤ 1016_
 -   _0 ≤ num ≤ 104_
 
-##### Input Format for Custom Testing
+## Input Format for Custom Testing
 Input from stdin will be processed as follows and passed to the function.
 
 The first line contains an integer _n_, the size of the array _arr_.
 Each of the next _n_ lines contains an integer _arr[i]_ where _0 ≤ i < n_.
 The last line contains a long integer, _num_.
 
-##### Sample Case 0
-**Sample Input**
+## Sample Case 0
+**Sample Input 0:**
 ```
 STDIN     Function
 -----     --------
@@ -56,15 +56,15 @@ STDIN     Function
 1    →    num = 1
 ```
 
-**Sample Output**
+**Sample Output 0:**
 ```
 4
 ```
 
-**Explanation**
+**Explanation:**
 Rearrange _arr_ to _arr = {1, 1, 2, 2, 3}._
 
-| arr | num |
+| **arr** | **num** |
 | --- | --- |
 |     | 1   |
 | 1   | 2   |
@@ -73,8 +73,8 @@ Rearrange _arr_ to _arr = {1, 1, 2, 2, 3}._
 | 2   | 4   |
 | 3   | 4   |
  
-##### Sample Case 1
-**Sample Input 1**
+## Sample Case 1
+**Sample Input 1:**
 ```
 STDIN     Function
 -----     --------
@@ -85,22 +85,22 @@ STDIN     Function
 1    →    num = 1
 ```
 
-**Sample Output 1**
+**Sample Output 1:**
 ```
 2
 ```
 
-**Explanation 1**
+**Explanation:**
 
-| arr | num |
+| **arr** | **num** |
 | --- | --- |
 |     | 1   |
 | 1   | 2   |
 | 1   | 2   |
 | 1   | 2   |
 
-##### Sample Case 2
-**Sample Input**
+## Sample Case 2
+**Sample Input 2:**
 ```
 STDIN     Function
 -----     --------
@@ -113,16 +113,15 @@ STDIN     Function
 2    →    num = 2
 ```
 
-**Sample Output**
+**Sample Output 2:**
 ```
 16
 ```
 
-**Explanation**
-
+**Explanation:**
 Rearrange _arr_ to _arr = {2, 4, 5, 6, 8}._
 
-| arr | num |
+| **arr** | **num** |
 | --- | --- |
 |     | 2   |
 | 2   | 4   |
@@ -133,6 +132,7 @@ Rearrange _arr_ to _arr = {2, 4, 5, 6, 8}._
 
 ---
 
+**Starter Code:**
 ```java
 import java.io.*;
 import java.math.*;
@@ -196,6 +196,7 @@ public class Solution {
 }
 ```
 
+**Finished Code:**
 ```java
 import java.io.*;
 import java.math.*;
